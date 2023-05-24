@@ -12,7 +12,8 @@ export const CardImage = styled(NextImage).attrs({
 
 export const Container = styled.header`
   background-image: ${props =>
-    `linear-gradient(to right, ${props.theme.colors.alternative.blue3}, ${props.theme.colors.alternative.blue4})`};
+    `linear-gradient(to right, ${props.theme.colors.alternative.blue2}, ${props.theme.colors.alternative.blue1})`};
+
   align-items: center;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   display: flex;

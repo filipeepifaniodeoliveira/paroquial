@@ -1,6 +1,6 @@
 import React from 'react';
 import { TabView, TabPanel } from 'primereact/tabview';
-import Pregacao from '../../../../public/images/matrizOficial.png';
+import Funcionamento from '../../../../public/images/agenda.png';
 
 import * as S from './styles';
 
@@ -26,36 +26,37 @@ export const TimesInfos = (): JSX.Element => {
       <S.Pincipal>
         <S.ContainerInfo>
           <S.Container>
-            <S.ContainerTitle>
-              <h4>Horários</h4>
-            </S.ContainerTitle>
-          </S.Container>
-          <S.Container>
             <S.ContainerTimes>
               <TabView>
                 <TabPanel header="Celebrações">
                   <S.ContainerMissas>
                     <h3 className="">Domingos</h3>
-                    <p className="">Manhã: 08:00 hs</p>
-                    <p className="">Noite: 19:00 hs</p>
+                    <p className=""> Manhã: 08:00 hs</p>
+                    <p className=""> Noite: 19:00 hs</p>
                   </S.ContainerMissas>
                   <S.ContainerMissas>
                     <h3 className="">Sábados</h3>
-                    <p className="">Tarde: 17:00 hs</p>
+                    <p className=""> Tarde: 17:00 hs</p>
                   </S.ContainerMissas>
                   <S.ContainerMissas>
                     <h3 className="">Quintas</h3>
-                    <p className="">Noite: 19:00 hs</p>
+                    <p className=""> Noite: 19:00 hs</p>
                   </S.ContainerMissas>
                   <S.ContainerMissas>
                     <h3 className="">Primeira sexta-feira do mês</h3>
-                    <p className="">Noite: 19:00 hs</p>
+                    <p className=""> Noite: 19:00 hs</p>
                   </S.ContainerMissas>
                 </TabPanel>
                 <TabPanel header="Confissões">
                   <S.ContainerMissas>
                     <h3 className="">Sexta-Feira</h3>
                     <p className="">Tarde: 14:00 hs as 17:00</p>
+                  </S.ContainerMissas>
+                </TabPanel>
+                <TabPanel header="Batizados">
+                  <S.ContainerMissas>
+                    <h3 className="">(2º e 4º) Domingos</h3>
+                    <p className="">Manhã: 08:00 hs</p>
                   </S.ContainerMissas>
                 </TabPanel>
                 <TabPanel header="Secretaria">
@@ -105,10 +106,12 @@ export const TimesInfos = (): JSX.Element => {
             </S.ContainerTimes>
           </S.Container>
         </S.ContainerInfo>
-        <S.ContainerImg>
-          <S.CardImage src={Pregacao} alt="logo" />
-        </S.ContainerImg>
       </S.Pincipal>
+      <S.Container>
+        <S.ContainerInfoPhone>
+          <p>Em caso de dúvidas entre em contato: (81) 3037-0003 </p>
+        </S.ContainerInfoPhone>
+      </S.Container>
     </>
   );
 };

@@ -101,14 +101,18 @@ const sideNavProps = {
       alt: 'string',
       href: 'string',
     },
+    {
+      name: 'CONTATO',
+      alt: 'string',
+      href: 'string',
+    },
   ],
 };
 
 export const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
     <S.Container data-testid="loaded-container">
-      <HeaderGlobal />
-      <SideNavegation sideMenu={sideNavProps.sideMenu} />
+      <HeaderGlobal sideMenu={sideNavProps.sideMenu} />
       {children}
       <FooterGlobal footerProps={footerProps.footerProps} />
     </S.Container>

@@ -14,7 +14,7 @@ export const Banner = (): JSX.Element => {
         <h2>Paróquia de Santa Maria</h2>
         <h2>Mãe de Deus</h2>
         <h5>Macaxeira (Recife/PE)</h5>
-        <h3>Seja bem vindo a nossa comunidade</h3>
+        <h3>Seja bem vindo à nossa comunidade</h3>
       </S.ContainerText>
       <S.ContainerLogo>
         <S.CardImage2 src={logo} alt="logo" />

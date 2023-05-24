@@ -3,7 +3,8 @@ import NextImage from 'next/image';
 
 export const CardImage1 = styled(NextImage).attrs({
   loading: 'lazy',
-  height: 400,
+  height: 670,
+  width: 400,
 })`
   object-fit: cover;
 `;
@@ -16,6 +17,7 @@ export const CardImage2 = styled(NextImage).attrs({
 
 export const Container = styled.div`
   width: 100%;
+  height: 590px;
   display: flex;
   justify-content: space-between;
   background-image: ${props =>
@@ -30,7 +32,6 @@ export const ContainerPadroeira = styled.div`
   justify-content: center;
 
   img {
-    max-height: 400px;
     margin-left: 100px;
   }
 `;
@@ -48,12 +49,11 @@ export const ContainerLogo = styled.div`
 
 export const ContainerText = styled.div`
   text-align: center;
-  margin-right: 90px;
+  margin-right: 80px;
   h2 {
     font-family: ${props => props.theme.fonts.secundary};
     font-size: ${props => props.theme.fontsSizes['4xl']};
     font-weight: bold;
-    /* margin-bottom: 20px; */
     color: ${props => props.theme.colors.primary.colorNeutralLightest};
   }
   h3 {
