@@ -126,7 +126,7 @@ export const ContainerTimes = styled.div`
   p {
     font-size: 16px;
     font-family: ${props => props.theme.fonts.primary};
-    margin-top: 8px !important;
+    margin-top: 18px !important;
   }
 `;
 

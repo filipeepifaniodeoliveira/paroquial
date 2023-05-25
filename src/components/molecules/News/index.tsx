@@ -41,12 +41,12 @@ export const News = (): JSX.Element => {
   return (
     <>
       <S.Container>
-        <S.Container>
+        <S.ContainerTitles>
           <S.ContainerTitle>
             <h2>Notícias</h2>
             <h4>Fique por dentro das notícias paróquiais</h4>
           </S.ContainerTitle>
-        </S.Container>
+        </S.ContainerTitles>
         <S.Cards>
           {cards.sideMenu.map((item, index) => (
             <div key={index}>

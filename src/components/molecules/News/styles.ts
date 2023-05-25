@@ -3,6 +3,15 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin: 90px 0;
+  margin-bottom: 60px;
+
+  @media (max-width: 1000px) {
+    margin: 90px 20px;
+  }
+`;
+
+export const ContainerTitles = styled.div`
+  margin: 50px 0;
 `;
 
 export const Cards = styled.div`
@@ -64,16 +73,26 @@ export const ContainerTitle = styled.div`
 
   h2 {
     color: ${props => props.theme.colors.alternative.blue2};
+    color: #77abc1;
     font-family: ${props => props.theme.fonts.secundary};
     font-size: ${props => props.theme.fontsSizes['3xl']};
     font-weight: bold;
     margin-bottom: 8px;
+
+    @media (max-width: 900px) {
+      font-size: ${props => props.theme.fontsSizes['2xl']};
+    }
   }
   h4 {
     color: ${props => props.theme.colors.alternative.blue2};
+    color: #77abc1;
     font-family: ${props => props.theme.fonts.secundary};
     font-size: ${props => props.theme.fontsSizes.xl};
     font-weight: 700;
     max-height: 400px;
+
+    @media (max-width: 600px) {
+      font-size: ${props => props.theme.fontsSizes.sm};
+    }
   }
 `;

@@ -15,6 +15,7 @@ export const Pincipal = styled.div`
   align-items: center;
   padding: 0px 20px 0px 20px;
   width: 100%;
+  margin-bottom: 20px;
 
   @media (max-width: 1000px) {
     display: block;
@@ -126,7 +127,7 @@ export const ContainerTimes = styled.div`
   p {
     font-size: 16px;
     font-family: ${props => props.theme.fonts.primary};
-    margin-top: 8px !important;
+    margin-top: 18px !important;
   }
 `;
 
@@ -142,5 +143,36 @@ export const ContainerButton = styled.div`
     height: 40px;
     background-color: #77abc1;
     border: none;
+  }
+`;
+
+export const ContainerIcons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 10px;
+  svg {
+    cursor: pointer;
+    color: #77abc1;
+  }
+`;
+
+export const CardIcon = styled.p`
+  /* grid-row: 2/3; */
+  font-size: 20px;
+  justify-self: end;
+`;
+export const ContainerAddress = styled.div`
+  text-align: right;
+  font-weight: 600;
+  color: #77abc1;
+  font-size: ${props => props.theme.fontsSizes.md};
+  font-family: ${props => props.theme.fonts.primary};
+
+  @media (max-width: ${props => props.theme.media.resolution.mobile.md}) {
+    font-size: ${props => props.theme.fontsSizes.lg};
+  }
+  svg {
+    cursor: pointer;
   }
 `;

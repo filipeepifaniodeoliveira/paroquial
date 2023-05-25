@@ -24,10 +24,13 @@ export const SectionSobre = (): JSX.Element => {
         </S.ContainerTitle>
       </S.Container>
       <S.Pincipal>
+        <S.ContainerImgMob>
+          <S.CardImageMobile src={Pregacao} alt="logo" />
+        </S.ContainerImgMob>
         <S.ContainerInfo>
           <S.Container>
             <S.ContainerTitle>
-              <h4>Horários</h4>
+              <h4>História</h4>
             </S.ContainerTitle>
           </S.Container>
           <S.Container>

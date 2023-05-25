@@ -9,7 +9,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import * as S from './styles';
 
 interface FooterProps {
-  footerProps: Array<CategoryProps>;
+  footerProps?: Array<CategoryProps>;
 }
 
 interface CategoryProps {

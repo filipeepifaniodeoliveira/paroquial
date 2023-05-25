@@ -11,6 +11,11 @@ export const ContainerMenu = styled.div`
   @media (max-width: ${props => props.theme.media.resolution.mobile.md}) {
     font-size: ${props => props.theme.fontsSizes.lg};
   }
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+
   svg {
     cursor: pointer;
   }
