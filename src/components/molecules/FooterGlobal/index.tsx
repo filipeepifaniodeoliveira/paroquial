@@ -8,22 +8,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 import * as S from './styles';
 
-interface FooterProps {
-  footerProps?: Array<CategoryProps>;
-}
-
-interface CategoryProps {
-  name: string;
-  subItens: Array<SubItensProps>;
-}
-
-interface SubItensProps {
-  link: string;
-  href: string;
-  name: string;
-}
-
-export const FooterGlobal = ({ footerProps }: FooterProps): JSX.Element => {
+export const FooterGlobal = (): JSX.Element => {
   return (
     <>
       <S.Container>

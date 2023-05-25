@@ -1,18 +1,7 @@
 import React from 'react';
 import { TabView, TabPanel } from 'primereact/tabview';
-import Funcionamento from '../../../../public/images/agenda.png';
 
 import * as S from './styles';
-
-interface ItensProps {
-  sideMenu: Array<MenusProps>;
-}
-
-interface MenusProps {
-  name: string;
-  alt: string;
-  href: string;
-}
 
 export const TimesInfos = (): JSX.Element => {
   return (

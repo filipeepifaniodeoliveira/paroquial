@@ -1,9 +1,5 @@
 import React from 'react';
-import { faClock } from '@fortawesome/free-solid-svg-icons/faClock';
-import Pregacao from '../../../../public/images/matrizOficial.png';
-
 import * as S from './styles';
-import { SideNavegation } from '../SideNavegation';
 import { CardNew } from '../CardNew';
 
 export const News = (): JSX.Element => {

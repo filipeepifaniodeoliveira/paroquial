@@ -4,16 +4,6 @@ import Padre from '../../../../public/images/padre.png';
 
 import * as S from './styles';
 
-interface ItensProps {
-  sideMenu: Array<MenusProps>;
-}
-
-interface MenusProps {
-  name: string;
-  alt: string;
-  href: string;
-}
-
 export const History = (): JSX.Element => {
   return (
     <S.SectionSobre>

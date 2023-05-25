@@ -1,19 +1,8 @@
 import React from 'react';
-import { TabView, TabPanel } from 'primereact/tabview';
 import Pregacao from '../../../../public/images/matrizOficial.png';
 import { Button } from 'primereact/button';
 
 import * as S from './styles';
-
-interface ItensProps {
-  sideMenu: Array<MenusProps>;
-}
-
-interface MenusProps {
-  name: string;
-  alt: string;
-  href: string;
-}
 
 export const SectionSobre = (): JSX.Element => {
   return (

@@ -6,16 +6,6 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { Icon } from '../../atoms/Icon';
 import * as S from './styles';
 
-interface ItensProps {
-  sideMenu: Array<MenusProps>;
-}
-
-interface MenusProps {
-  name: string;
-  alt: string;
-  href: string;
-}
-
 export const Contatos = (): JSX.Element => {
   return (
     <S.SectionSobre>

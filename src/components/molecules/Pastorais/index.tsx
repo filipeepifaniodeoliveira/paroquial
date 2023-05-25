@@ -1,19 +1,9 @@
 import React from 'react';
-import LegioMarie from '../../../../public/images/legioMarie.png';
 import Apostolado from '../../../../public/images/apostolado.png';
 import Terco from '../../../../public/images/terco.png';
+import LegioMarie from '../../../../public/images/legiomarie.png';
 
 import * as S from './styles';
-
-interface ItensProps {
-  sideMenu: Array<MenusProps>;
-}
-
-interface MenusProps {
-  name: string;
-  alt: string;
-  href: string;
-}
 
 export const Pastorais = (): JSX.Element => {
   return (
