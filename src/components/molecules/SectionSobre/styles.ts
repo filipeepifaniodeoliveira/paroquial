@@ -27,7 +27,7 @@ export const ContainerInfo = styled.div`
   background-color: ${props => props.theme.colors.primary.colorNeutralWhite};
 
   @media (max-width: 1000px) {
-    height: 500px !important;
+    height: 580px !important;
   }
 
   @media (min-width: 1000px) {
