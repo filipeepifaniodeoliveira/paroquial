@@ -95,7 +95,7 @@ export const ContainerInfoPhone = styled.div`
     font-size: ${props => props.theme.fontsSizes.xs};
     font-weight: 700;
     max-height: 400px;
-
+    text-align: center;
     border: none;
 
     @media (max-width: 600px) {
