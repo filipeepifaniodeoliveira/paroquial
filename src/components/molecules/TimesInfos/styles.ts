@@ -41,7 +41,10 @@ export const Container = styled.div`
 export const ContainerTitle = styled.div`
   border-radius: 50px;
   text-align: center;
-
+  :hover {
+    transform: scale(1.1);
+    transition: 500ms linear;
+  }
   @media (max-width: 1000px) {
     margin-top: 30px;
   }
@@ -52,8 +55,8 @@ export const ContainerTitle = styled.div`
 
   h2 {
     color: rgb(244, 244, 246);
-    font-family: ${props => props.theme.fonts.secundary};
-    font-size: ${props => props.theme.fontsSizes['3xl']};
+    font-family: ${props => props.theme.fonts.type5}, sans-serif;
+    font-size: ${props => props.theme.fontsSizes['4xl']};
     font-weight: bold;
     margin-bottom: 8px;
 
@@ -124,8 +127,8 @@ export const ContainerTimesDesktop = styled.div`
   }
 
   .p-tabview-title {
-    font-size: 14px;
-    font-family: ${props => props.theme.fonts.primary};
+    font-size: 18px;
+    font-family: ${props => props.theme.fonts.type5}, sans-serif;
 
     @media (max-width: 600px) {
       font-size: 12px;

@@ -47,7 +47,26 @@ export const ContainerPadroeira = styled.div`
   justify-content: center;
 
   img {
-    margin-left: 100px;
+    -webkit-animation: right 4s forwards;
+    animation: right 4s forwards;
+
+    @-webkit-keyframes right {
+      from {
+        right: 0px;
+      }
+      to {
+        left: 25px;
+      }
+    }
+
+    @keyframes right {
+      from {
+        right: 0px;
+      }
+      to {
+        left: 25px;
+      }
+    }
   }
 
   @media (max-width: 1000px) {
@@ -60,9 +79,29 @@ export const ContainerLogo = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 70px;
+
   img {
     max-height: 400px;
-    margin-left: 100px;
+    -webkit-animation: left 4s forwards;
+    animation: left 4s forwards;
+
+    @-webkit-keyframes left {
+      from {
+        right: 0px;
+      }
+      to {
+        margin-right: 25px;
+      }
+    }
+
+    @keyframes left {
+      from {
+        margin-right: 0px;
+      }
+      to {
+        margin-right: 25px;
+      }
+    }
   }
 
   @media (max-width: 1000px) {
@@ -85,44 +124,52 @@ export const ContainerText = styled.div`
   text-align: center;
   margin-right: 80px;
 
+  :hover {
+    transform: scale(1.1);
+    transition: 800ms linear;
+  }
+
   @media (max-width: 1000px) {
     margin-right: 0px;
   }
 
   h2 {
-    font-family: ${props => props.theme.fonts.secundary};
-    font-size: ${props => props.theme.fontsSizes['4xl']};
+    /* font-family: ${props => props.theme.fonts.type3}, cursive; */
+    /* font-family: ${props => props.theme.fonts.type4}, cursive; */
+    /* font-family: ${props => props.theme.fonts.type5}, sans-serif; */
+    font-family: ${props => props.theme.fonts.type6}, cursive;
+    font-size: ${props => props.theme.fontsSizes['6xl']};
     font-weight: bold;
     color: ${props => props.theme.colors.primary.colorNeutralLightest};
 
-    @media (max-width: 700px) {
-      font-size: ${props => props.theme.fontsSizes.sm};
-      margin-bottom: 0px;
-    }
-
-    @media (max-width: 700px) {
-      font-size: ${props => props.theme.fontsSizes.xl};
-      margin-bottom: 0px;
-    }
-
     @media (max-width: 1242px) {
       font-size: ${props => props.theme.fontsSizes['2xl']};
+    }
+
+    @media (max-width: 700px) {
+      font-size: 38px;
+      margin-bottom: 0px;
     }
   }
 
   h5 {
     max-height: 400px;
-    font-family: ${props => props.theme.fonts.secundary};
-    font-size: ${props => props.theme.fontsSizes.md};
+    /* font-family: ${props => props.theme.fonts.secundary}; */
+    /* font-family: ${props => props.theme.fonts.type3}, cursive; */
+    /* font-family: ${props => props.theme.fonts.type4}, cursive; */
+    /* font-family: ${props => props.theme.fonts.type5}, sans-serif; */
+    font-family: ${props => props.theme.fonts.type6}, cursive;
+    font-size: 28px;
     color: ${props => props.theme.colors.primary.colorNeutralLightest};
     @media (max-width: 1242px) {
-      font-size: ${props => props.theme.fontsSizes.xs};
+      font-family: ${props => props.theme.fonts.type6}, cursive;
+      font-size: 24px;
       margin-top: 10px;
     }
   }
 
   h3 {
-    margin-top: 20px;
+    margin-top: 60px;
     max-height: 400px;
     font-family: ${props => props.theme.fonts.primary};
     font-size: ${props => props.theme.fontsSizes['2xl']};
@@ -130,7 +177,7 @@ export const ContainerText = styled.div`
 
     @media (max-width: 700px) {
       font-size: ${props => props.theme.fontsSizes.lg};
-      margin-top: 40px;
+      margin-top: 30px;
     }
   }
 `;

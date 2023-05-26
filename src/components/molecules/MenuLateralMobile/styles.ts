@@ -15,6 +15,9 @@ export const ContainerGlobal = styled.div``;
 export const Item = styled.div`
   padding: ${props =>
     `${props.theme.spacings.sp02} ${props.theme.spacings.sp08} `};
+  font-family: ${props => props.theme.fonts.type5}, sans-serif;
+  font-size: ${props => props.theme.fontsSizes['6xl']};
+  text-align: center;
 `;
 
 export const ContainerMobile = styled.div`
@@ -122,7 +125,7 @@ export const ContainerMobile = styled.div`
   }
 
   .sidenav---sidenav-toggle---1KRjR {
-    margin-top: 18px;
+    margin-top: 10px;
   }
 
   .sidenav---sidenav-navitem---uwIJ- {

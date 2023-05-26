@@ -111,7 +111,7 @@ export const ContainerMobile = styled.div`
   }
 
   .sidenav---sidenav-toggle---1KRjR {
-    margin-top: 18px;
+    margin-top: 10px;
   }
 
   .sidenav---sidenav-navitem---uwIJ- {

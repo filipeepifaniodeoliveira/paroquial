@@ -96,6 +96,10 @@ export const ContainerTitle = styled.div`
   border-radius: 50px;
   margin-top: 60px;
   text-align: center;
+  :hover {
+    transform: scale(1.1);
+    transition: 500ms linear;
+  }
 
   @media (max-width: 1000px) {
     margin-top: 30px;
@@ -105,7 +109,8 @@ export const ContainerTitle = styled.div`
     color: ${props => props.theme.colors.alternative.blue2};
     color: #77abc1;
     font-family: ${props => props.theme.fonts.secundary};
-    font-size: ${props => props.theme.fontsSizes['3xl']};
+    font-family: ${props => props.theme.fonts.type5}, sans-serif;
+    font-size: ${props => props.theme.fontsSizes['4xl']};
     font-weight: bold;
     margin-bottom: 8px;
   }
@@ -113,7 +118,8 @@ export const ContainerTitle = styled.div`
     color: ${props => props.theme.colors.alternative.blue2};
     color: #77abc1;
     font-family: ${props => props.theme.fonts.secundary};
-    font-size: ${props => props.theme.fontsSizes.xl};
+    font-family: ${props => props.theme.fonts.type5}, sans-serif;
+    font-size: ${props => props.theme.fontsSizes['3xl']};
     font-weight: 700;
     max-height: 400px;
   }
@@ -123,6 +129,31 @@ export const ContainerTimes = styled.div`
   font-size: ${props => props.theme.fontsSizes.lg};
   margin-top: 30px;
   max-width: 60%;
+
+  p {
+    @media (min-width: 700px) {
+      -webkit-animation: right 4s forwards;
+      animation: right 3s forwards;
+
+      @-webkit-keyframes right {
+        from {
+          margin-right: 0px;
+        }
+        to {
+          margin-left: 20px;
+        }
+      }
+
+      @keyframes right {
+        from {
+          margin-right: 0px;
+        }
+        to {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
 
   @media (max-width: 700px) {
     max-width: 80%;

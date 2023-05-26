@@ -91,7 +91,8 @@ export const ContainerTitle = styled.div`
     color: ${props => props.theme.colors.alternative.blue2};
     color: #77abc1;
     font-family: ${props => props.theme.fonts.secundary};
-    font-size: ${props => props.theme.fontsSizes['3xl']};
+    font-family: ${props => props.theme.fonts.type5}, sans-serif;
+    font-size: ${props => props.theme.fontsSizes['4xl']};
     font-weight: bold;
     margin-bottom: 8px;
 
@@ -102,7 +103,7 @@ export const ContainerTitle = styled.div`
   h4 {
     color: ${props => props.theme.colors.alternative.blue2};
     color: #77abc1;
-    font-family: ${props => props.theme.fonts.secundary};
+    font-family: ${props => props.theme.fonts.primary};
     font-size: ${props => props.theme.fontsSizes.xl};
     font-weight: 700;
     max-height: 400px;

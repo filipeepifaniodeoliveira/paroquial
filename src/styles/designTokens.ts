@@ -15,6 +15,10 @@ export default {
   fonts: {
     primary: 'Nunito',
     secundary: 'Montserrat',
+    type3: 'Bad Script',
+    type4: 'Lobster',
+    type5: 'Pathway Gothic One',
+    type6: 'Tangerine',
   },
   fontsSizes: {
     '2sm': '1rem',
