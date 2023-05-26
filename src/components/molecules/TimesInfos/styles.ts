@@ -40,8 +40,15 @@ export const Container = styled.div`
 
 export const ContainerTitle = styled.div`
   border-radius: 50px;
-  margin-top: 60px;
   text-align: center;
+
+  @media (max-width: 1000px) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: 1000px) {
+    margin-top: 60px;
+  }
 
   h2 {
     color: rgb(244, 244, 246);
@@ -54,6 +61,7 @@ export const ContainerTitle = styled.div`
       font-size: 24px;
     }
   }
+
   h3 {
     color: rgb(244, 244, 246);
     font-family: ${props => props.theme.fonts.primary};
@@ -62,10 +70,11 @@ export const ContainerTitle = styled.div`
     max-height: 400px;
 
     @media (max-width: 600px) {
-      font-size: 12px;
+      font-size: 16px;
     }
   }
-  h4
+
+  h4 {
     color: ${props => props.theme.colors.alternative.blue3};
     color: rgb(244, 244, 246);
     font-family: ${props => props.theme.fonts.secundary};
@@ -74,7 +83,7 @@ export const ContainerTitle = styled.div`
     max-height: 400px;
 
     @media (max-width: 600px) {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 `;
@@ -86,11 +95,19 @@ export const ContainerInfoPhone = styled.div`
     font-size: ${props => props.theme.fontsSizes.xs};
     font-weight: 700;
     max-height: 400px;
-    margin-bottom: 40px;
+
     border: none;
 
     @media (max-width: 600px) {
-      font-size: 12px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 1000px) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 1000px) {
+      margin-bottom: 40px;
     }
   }
 `;
@@ -144,11 +161,11 @@ export const ContainerTimesMobile = styled.div`
   }
 
   .p-tabview-title {
-    font-size: 14px;
+    font-size: 16px;
     font-family: ${props => props.theme.fonts.primary};
 
     @media (max-width: 600px) {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 
@@ -178,7 +195,7 @@ export const ContainerMissas = styled.div`
     margin-bottom: 6px !important;
 
     @media (max-width: 600px) {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
@@ -188,7 +205,7 @@ export const ContainerMissas = styled.div`
     margin-top: 3px !important;
     color: ${props => props.theme.colors.primary.colorNeutralWhite};
     @media (max-width: 600px) {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 

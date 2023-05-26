@@ -33,6 +33,11 @@ export const FooterGlobal = (): JSX.Element => {
             <h3>Telefone: (81) 3037-0003</h3>
           </S.ContainerAddress>
         </S.Footer>
+        <S.FooterMobile>
+          <S.ContainerMenu data-testid="global-header-container-menu">
+            <S.CardImageMobile src={Logo} alt="logo" />
+          </S.ContainerMenu>
+        </S.FooterMobile>
       </S.Container>
     </>
   );

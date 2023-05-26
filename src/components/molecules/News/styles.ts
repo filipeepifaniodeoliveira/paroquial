@@ -1,17 +1,25 @@
-import NextImage from 'next/image';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin: 90px 0;
-  margin-bottom: 60px;
-
   @media (max-width: 1000px) {
-    margin: 90px 20px;
+    margin: 20px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: 1000px) {
+    margin: 90px 0;
+    margin-bottom: 60px;
   }
 `;
 
 export const ContainerTitles = styled.div`
-  margin: 50px 0;
+  @media (max-width: 1000px) {
+    margin: 30px 0;
+  }
+
+  @media (min-width: 1000px) {
+    margin: 50px 0;
+  }
 `;
 
 export const Cards = styled.div`
@@ -19,6 +27,10 @@ export const Cards = styled.div`
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 60px;
+  }
 
   @media (max-width: 1600px) {
     justify-content: center;
@@ -28,7 +40,6 @@ export const Cards = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Screen larger than 900px? 3 columns */
   @media (min-width: 900px) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -36,8 +47,6 @@ export const Cards = styled.div`
   .yellow {
     background-image: ${props =>
       `linear-gradient(to right, ${props.theme.colors.alternative.yellow3}, ${props.theme.colors.alternative.yellow1})`};
-    /* background: ${props =>
-      `radial-gradient(${props.theme.colors.alternative.yellow1}, ${props.theme.colors.alternative.yellow3})`}; */
   }
 
   .pink {
@@ -68,8 +77,15 @@ export const Cards = styled.div`
 
 export const ContainerTitle = styled.div`
   border-radius: 50px;
-  margin-top: 60px;
   text-align: center;
+
+  @media (max-width: 1000px) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: 1000px) {
+    margin-top: 60px;
+  }
 
   h2 {
     color: ${props => props.theme.colors.alternative.blue2};

@@ -24,9 +24,15 @@ export const Pincipal = styled.div`
 
 export const ContainerInfo = styled.div`
   width: 100%;
-  min-height: 600px;
   background-color: ${props => props.theme.colors.primary.colorNeutralWhite};
-  /* background-color: red; */
+
+  @media (max-width: 1000px) {
+    height: 500px !important;
+  }
+
+  @media (min-width: 1000px) {
+    min-height: 600px;
+  }
 `;
 
 export const ContainerImg = styled.div`
@@ -90,6 +96,10 @@ export const ContainerTitle = styled.div`
   border-radius: 50px;
   margin-top: 60px;
   text-align: center;
+
+  @media (max-width: 1000px) {
+    margin-top: 30px;
+  }
 
   h2 {
     color: ${props => props.theme.colors.alternative.blue2};

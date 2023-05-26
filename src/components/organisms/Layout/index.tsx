@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
 import { HeaderGlobal } from '@components/molecules/HeaderGlobal';
 import { FooterGlobal } from '@components/molecules/FooterGlobal';
-import { SideNavegation } from '@components/molecules/SideNavegation';
 
 import * as S from './styles';
 

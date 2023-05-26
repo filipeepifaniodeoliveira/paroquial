@@ -60,6 +60,7 @@ export const CardImage = styled(NextImage).attrs({
 })`
   object-fit: cover;
 `;
+
 export const ContainerIcons = styled.div`
   display: flex;
   align-items: center;
@@ -78,22 +79,6 @@ export const CardIcon = styled.p`
 
 export const Container = styled.div``;
 
-export const FooterMobile = styled.div`
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  height: 70px;
-  background-image: ${props =>
-    `linear-gradient(to right, ${props.theme.colors.alternative.blue3}, ${props.theme.colors.alternative.blue4})`};
-  padding: 10px 60px;
-  display: flex;
-  justify-content: Center;
-
-  @media only screen and (min-width: 700px) {
-    position: relative;
-  }
-`;
-
 export const TitleMobile = styled.div`
   margin: 0;
   padding: 0;
@@ -108,5 +93,32 @@ export const TitleMobile = styled.div`
 
   @media only screen and (max-width: 700px) {
     font-size: 8px;
+  }
+`;
+
+export const CardImageMobile = styled(NextImage).attrs({
+  loading: 'lazy',
+  quality: 85,
+  width: 70,
+  height: 60,
+})`
+  object-fit: cover;
+`;
+
+export const FooterMobile = styled.div`
+  width: 100%;
+  bottom: 0;
+  height: 70px;
+  background-image: ${props =>
+    `linear-gradient(to right, ${props.theme.colors.alternative.blue2}, ${props.theme.colors.alternative.blue1})`};
+  border-bottom: 1px solid ${props => props.theme.colors.alternative.blue2};
+
+  padding: 10px 60px;
+  align-items: center;
+  display: flex;
+  justify-content: Center;
+
+  @media (min-width: 700px) {
+    display: none;
   }
 `;

@@ -67,3 +67,19 @@ export const Containerflex = styled.div`
   align-items: center;
   width: 100%;
 `;
+
+export const ContainerMobile = styled.div`
+  @media (min-width: 1000px) {
+    display: none;
+  }
+`;
+
+export const ContainerDesktop = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+`;
