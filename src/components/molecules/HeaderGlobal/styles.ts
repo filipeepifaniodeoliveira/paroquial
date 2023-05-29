@@ -28,6 +28,7 @@ export const Container = styled.header`
   }
 
   @media (max-width: 1000px) {
+    padding: 0.1rem 0rem !important;
     background-image: ${props =>
       `linear-gradient(to right, ${props.theme.colors.alternative.blue2}, ${props.theme.colors.alternative.blue2})`};
   }

@@ -1,13 +1,12 @@
 import { useState } from 'react';
-import { NavItem } from '@trendmicro/react-sidenav';
 import Logo from '../../../../public/images/logo-principal.png';
 
 import NextLink from 'next/link';
-import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import * as S from './styles';
 
 type Menu = {
   menu: Array<Item>;
+  openMenu: any;
 };
 
 type Item = {
@@ -16,13 +15,7 @@ type Item = {
   href: string;
 };
 
-export const MenuLateralMobile = ({ menu }: Menu): JSX.Element => {
-  const [open, setOpen] = useState(true);
-
-  const openMenu = () => {
-    setOpen(!open);
-  };
-
+export const MenuLateralMobile = ({ menu, openMenu }: Menu): JSX.Element => {
   return (
     <S.ContainerGlobal>
       <S.ContainerAvatar>
@@ -31,9 +24,9 @@ export const MenuLateralMobile = ({ menu }: Menu): JSX.Element => {
       <S.ContainerMobile>
         {menu &&
           menu.map((item, index) => (
-            <S.Item key={index}>
+            <S.Item key={index} onClick={openMenu}>
               <NextLink href={item.href}>
-                <NavItem eventKey=".,">{item.name}</NavItem>
+                <p>{item.name}</p>
               </NextLink>
             </S.Item>
           ))}

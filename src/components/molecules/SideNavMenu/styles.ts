@@ -1,36 +1,47 @@
 import styled from 'styled-components';
-import NextImage from 'next/image';
 
-export const CardImage = styled(NextImage).attrs({
-  loading: 'lazy',
-  quality: 85,
-  width: 180,
-  height: 170,
-})`
-  object-fit: cover;
-`;
-
-export const ContainerGlobal = styled.div`
-  z-index: 99;
-`;
-
-export const Item = styled.div`
-  font-family: ${props => props.theme.fonts.type5}, sans-serif;
-  font-size: ${props => props.theme.fontsSizes['6xl']};
-  text-align: center;
-  margin-top: 16px;
-  p {
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 16px;
-    width: 90%;
-  }
-`;
+export const ContainerGlobal = styled.div``;
 
 export const ContainerMobile = styled.div`
-  margin-top: 20px;
-  z-index: 1;
-  #header {
+  button {
+    border: none;
+    background: transparent;
+  }
+  svg {
+    font-size: 24px;
+    margin-left: 26px;
+  }
+  z-index: 99;
+
+  p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 26px;
+    color: white;
+  }
+
+  .sidenav {
+    z-index: 98;
+    position: absolute;
+    width: 100vw;
+    background-color: ${props => props.theme.colors.alternative.blue2};
+
+    z-index: 99;
+    height: 200vh;
+    border-bottom-right-radius: 30px;
+    background-color: ${props => props.theme.colors.alternative.blue2};
+
+    @media (max-width: 1000px) {
+      height: 230vh;
+      min-width: 416px !important;
+    }
+
+    @media (max-width: 700px) {
+      height: 480vh;
+      min-width: 100% !important;
+    }
+  }
+  /* #header {
     position: absolute;
     width: 220px;
   }
@@ -107,14 +118,14 @@ export const ContainerMobile = styled.div`
   @media only screen and (max-width: 720px) {
     html {
       overflow: hidden;
-    }
-  }
+    } */
+  /* } */
 
-  nav {
+  /* nav {
     z-index: 99;
     height: 200vh;
-    border-bottom-right-radius: 30px;
-    background-color: ${props => props.theme.colors.alternative.blue2};
+    /* border-bottom-right-radius: 30px; */
+  /* background-color: ${props => props.theme.colors.alternative.blue2};
 
     @media (max-width: 1000px) {
       height: 230vh;
@@ -125,8 +136,8 @@ export const ContainerMobile = styled.div`
       height: 480vh;
       min-width: 100% !important;
     }
-  }
-
+  } */
+  /*
   .sidenav---collapsed---LQDEv {
     height: 80px;
   }
@@ -137,20 +148,19 @@ export const ContainerMobile = styled.div`
 
   .sidenav---sidenav-navitem---uwIJ- {
     color: ${props => props.theme.colors.natural.type1};
-    font-size: ${props => props.theme.fontsSizes.xl};
+    font-size: ${props => props.theme.fontsSizes.sm};
     font-family: ${props => props.theme.fonts.secondary};
-    margin-top: 25px;
-    border: 2px solid ${props => props.theme.colors.primary.colorNeutralMedium};
+    margin-top: 20px;
+    border: 1px solid ${props => props.theme.colors.natural.type1};
     border-radius: 15px;
     padding: 25px;
   }
-`;
 
-export const ContainerAvatar = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    cursor: pointer;
+  .sidenav---sidenav---_2tBP {
+    background: none;
   }
+
+  .sidenav---sidenav---_2tBP.sidenav---expanded---1KdUL {
+    background-color: ${props => props.theme.colors.alternative.blue2};
+  } */
 `;

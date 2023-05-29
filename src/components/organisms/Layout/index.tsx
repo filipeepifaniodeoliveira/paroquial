@@ -10,32 +10,32 @@ interface LayoutProps {
 const sideNavProps = {
   sideMenu: [
     {
-      name: 'INÍCIO',
+      name: 'Início',
       alt: 'string',
       href: '/',
     },
     {
-      name: 'PARÓQUIA',
+      name: 'Paróquia',
       alt: 'string',
       href: '/paroquia',
     },
     {
-      name: 'PASTORAIS',
+      name: 'Pastorais',
       alt: 'string',
       href: 'pastorais',
     },
     {
-      name: 'CAPELAS',
+      name: 'Capelas',
       alt: 'string',
       href: 'capelas',
     },
     {
-      name: 'NOTÍCIAS',
+      name: 'Notícias',
       alt: 'string',
       href: 'noticias',
     },
     {
-      name: 'CONTATO',
+      name: 'Contatos',
       alt: 'string',
       href: 'contatos',
     },

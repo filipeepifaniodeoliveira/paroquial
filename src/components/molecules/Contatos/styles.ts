@@ -155,6 +155,11 @@ export const ContainerIcons = styled.div`
     cursor: pointer;
     color: #77abc1;
   }
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
 `;
 
 export const CardIcon = styled.p`
@@ -162,6 +167,7 @@ export const CardIcon = styled.p`
   font-size: 20px;
   justify-self: end;
 `;
+
 export const ContainerAddress = styled.div`
   text-align: right;
   font-weight: 600;
@@ -172,6 +178,15 @@ export const ContainerAddress = styled.div`
   @media (max-width: ${props => props.theme.media.resolution.mobile.md}) {
     font-size: ${props => props.theme.fontsSizes.lg};
   }
+
+  @media (max-width: 1000px) {
+    text-align: center;
+    margin-top: 30px;
+    p {
+      margin-top: 20px;
+    }
+  }
+
   svg {
     cursor: pointer;
   }

@@ -44,6 +44,8 @@ export const Container = styled.div`
 `;
 
 export const Item = styled.div`
+  text-shadow: 1px 1px 2px black;
+
   padding: ${props =>
     `${props.theme.spacings.sp02} ${props.theme.spacings.sp08} `};
 `;
@@ -63,9 +65,9 @@ export const ItemLink = styled.h2`
 `;
 
 export const Containerflex = styled.div`
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   width: 100%;
 `;
 

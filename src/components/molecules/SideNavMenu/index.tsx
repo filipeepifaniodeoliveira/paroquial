@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import SideNav, { NavItem } from '@trendmicro/react-sidenav';
-import NextLink from 'next/link';
-import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import * as S from './styles';
-import MenuLateralMobile from '../MenuLateralMobile';
-import SideNavMenu from '../SideNavMenu';
+import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 
-export const SideNavBarMobile = (): JSX.Element => {
+import MenuLateralMobile from '../MenuLateralMobile';
+import { Icon } from '@components/atoms/Icon';
+
+export const SideNavMenu = (): JSX.Element => {
   const sideNavProps = {
     sideMenu: [
       {
@@ -45,27 +44,33 @@ export const SideNavBarMobile = (): JSX.Element => {
   const [open, setOpen] = useState(true);
 
   const openMenu = () => {
+    console.log(!open);
     setOpen(!open);
   };
 
   return (
     <S.ContainerGlobal>
       <S.ContainerMobile>
-        {/* <SideNav onToggle={openMenu}>
-              <SideNav.Toggle />
-              <SideNav.Nav defaultSelected="home">
-                {!open && (
-                  <div className="sidenav">
-                    <MenuLateralMobile menu={sideNavProps.sideMenu} />
-                  </div>
-                )}
-              </SideNav.Nav>
-            </SideNav>
-          */}
-        <SideNavMenu />
+        {open ? (
+          <button onClick={openMenu}>
+            <Icon icon={faBars} color="white" />
+          </button>
+        ) : (
+          <button onClick={openMenu}>
+            <p>X</p>
+          </button>
+        )}
+        {!open && (
+          <div className="sidenav">
+            <MenuLateralMobile
+              menu={sideNavProps.sideMenu}
+              openMenu={openMenu}
+            />
+          </div>
+        )}
       </S.ContainerMobile>
     </S.ContainerGlobal>
   );
 };
 
-export default SideNavBarMobile;
+export default SideNavMenu;

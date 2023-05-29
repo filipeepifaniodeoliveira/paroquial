@@ -129,10 +129,15 @@ export const ContainerTimesDesktop = styled.div`
   .p-tabview-title {
     font-size: 18px;
     font-family: ${props => props.theme.fonts.type5}, sans-serif;
-
+    color: #77abc1;
     @media (max-width: 600px) {
       font-size: 12px;
     }
+  }
+
+  .p-tabview-ink-bar {
+    background-color: ${props =>
+      props.theme.colors.alternative.blue2} !important;
   }
 
   .p-tabview-panels {
@@ -149,6 +154,10 @@ export const ContainerTimesDesktop = styled.div`
       color: #77abc1 !important;
       border-color: #77abc1 !important;
     }
+  }
+
+  .p-tabview-selected {
+    color: #77abc1 !important;
   }
 `;
 
