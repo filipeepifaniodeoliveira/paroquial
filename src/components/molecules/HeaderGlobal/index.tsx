@@ -1,15 +1,13 @@
 import React from 'react';
-import Logo from '../../../../public/images/logo-principal.png';
 
 import * as S from './styles';
+import { SideNavegation } from '../SideNavegation';
 
-export const HeaderGlobal = (): JSX.Element => {
+export const HeaderGlobal = ({ sideMenu }: any): JSX.Element => {
   return (
     <>
       <S.Container>
-        <S.ContainerMenu data-testid="global-header-container-menu">
-          <S.CardImage src={Logo} alt="logo" />
-        </S.ContainerMenu>
+        <SideNavegation sideMenu={sideMenu} />
       </S.Container>
     </>
   );

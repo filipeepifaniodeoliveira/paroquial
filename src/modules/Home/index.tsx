@@ -19,6 +19,8 @@ import { CardsMicroMobile } from '@components/molecules/MicroCardsMobile';
 import { Card } from '@components/atoms/Card';
 import { Carrousel } from '@components/molecules/Carrousel';
 import { TimesInfos } from '@components/molecules/TimesInfos';
+import { SectionSobre } from '@components/molecules/SectionSobre';
+import { News } from '@components/molecules/News';
 
 export const Home = (): JSX.Element => {
   const { t } = useTranslation('common');
@@ -103,7 +105,9 @@ export const Home = (): JSX.Element => {
         <title>{t('h1')}</title>
       </Head>
       <Carrousel />
+      <SectionSobre />
       <TimesInfos />
+      <News />
     </S.Container>
   );
 };
