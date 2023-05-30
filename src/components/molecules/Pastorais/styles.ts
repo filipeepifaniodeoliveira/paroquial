@@ -95,16 +95,16 @@ export const ContainerTitle = styled.div`
   h2 {
     color: ${props => props.theme.colors.alternative.blue2};
     color: #77abc1;
-    font-family: ${props => props.theme.fonts.secundary};
-    font-size: ${props => props.theme.fontsSizes['3xl']};
+    font-family: ${props => props.theme.fonts.type6}, cursive;
+    font-size: ${props => props.theme.fontsSizes['6xl']};
     font-weight: bold;
     margin-bottom: 8px;
   }
   h4 {
     color: ${props => props.theme.colors.alternative.blue2};
     color: #77abc1;
-    font-family: ${props => props.theme.fonts.secundary};
-    font-size: ${props => props.theme.fontsSizes.xl};
+    font-family: ${props => props.theme.fonts.type6}, cursive;
+    font-size: ${props => props.theme.fontsSizes['4xl']};
     font-weight: 700;
     max-height: 400px;
   }

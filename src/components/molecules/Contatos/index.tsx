@@ -24,10 +24,13 @@ export const Contatos = (): JSX.Element => {
         <S.ContainerInfo>
           <S.Container>
             <S.ContainerTitle>
-              <h4>Fale Conosco</h4>
+              <h4>Fale conosco através de nossos canais de comunicação</h4>
             </S.ContainerTitle>
           </S.Container>
-          <S.Container>
+          <S.DisplayFlex>
+            <S.ContainerAddress>
+              <h3>Telefone: (81) 3037-0003</h3>
+            </S.ContainerAddress>
             <S.ContainerAddress>
               <S.ContainerIcons>
                 <S.CardIcon>
@@ -40,11 +43,8 @@ export const Contatos = (): JSX.Element => {
                   <Icon icon={faYoutube} color="white" />
                 </S.CardIcon>
               </S.ContainerIcons>
-              <h3>R. Ida - Macaxeira</h3>
-              <h3>Recife - PE, 52090-298</h3>
-              <h3>Telefone: (81) 3037-0003</h3>
             </S.ContainerAddress>
-          </S.Container>
+          </S.DisplayFlex>
         </S.ContainerInfo>
       </S.Pincipal>
     </S.SectionSobre>

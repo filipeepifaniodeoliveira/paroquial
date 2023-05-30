@@ -51,8 +51,8 @@ export const Item = styled.div`
 `;
 
 export const ItemLink = styled.h2`
-  font-family: ${props => props.theme.fonts.secundary};
-  font-family: ${props => props.theme.fonts.type5}, sans-serif;
+  font-family: ${props => props.theme.fonts.primary};
+  /* font-family: ${props => props.theme.fonts.type5}, sans-serif; */
   font-size: ${props => props.theme.fontsSizes.xl};
   font-weight: ${props => props.theme.fontsWeight.semibold};
   color: ${props => props.theme.colors.natural.type1};

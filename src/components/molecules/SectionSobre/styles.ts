@@ -25,14 +25,7 @@ export const Pincipal = styled.div`
 export const ContainerInfo = styled.div`
   width: 100%;
   background-color: ${props => props.theme.colors.primary.colorNeutralWhite};
-
-  @media (max-width: 1000px) {
-    height: 580px !important;
-  }
-
-  @media (min-width: 1000px) {
-    min-height: 600px;
-  }
+  min-height: 600px;
 `;
 
 export const ContainerImg = styled.div`
@@ -108,20 +101,26 @@ export const ContainerTitle = styled.div`
   h2 {
     color: ${props => props.theme.colors.alternative.blue2};
     color: #77abc1;
-    font-family: ${props => props.theme.fonts.secundary};
-    font-family: ${props => props.theme.fonts.type5}, sans-serif;
-    font-size: ${props => props.theme.fontsSizes['4xl']};
+    font-family: ${props => props.theme.fonts.type6}, cursive;
+    font-size: ${props => props.theme.fontsSizes['6xl']};
     font-weight: bold;
     margin-bottom: 8px;
+
+    @media (max-width: 1000px) {
+      margin-top: 38px;
+    }
   }
   h4 {
     color: ${props => props.theme.colors.alternative.blue2};
     color: #77abc1;
-    font-family: ${props => props.theme.fonts.secundary};
-    font-family: ${props => props.theme.fonts.type5}, sans-serif;
-    font-size: ${props => props.theme.fontsSizes['3xl']};
+    font-family: ${props => props.theme.fonts.type6}, cursive;
+    font-size: ${props => props.theme.fontsSizes['4xl']};
     font-weight: 700;
     max-height: 400px;
+
+    @media (max-width: 1000px) {
+      margin-top: 38px;
+    }
   }
 `;
 
@@ -183,5 +182,19 @@ export const ContainerButton = styled.div`
     height: 40px;
     background-color: #77abc1;
     border: none;
+
+    :hover {
+      border-color: #77abc1;
+    }
+
+    :enabled:hover {
+      background-color: white;
+      color: #77abc1;
+      border: 1px solid #77abc1;
+    }
+
+    @media (max-width: 1000px) {
+      margin-bottom: 38px;
+    }
   }
 `;

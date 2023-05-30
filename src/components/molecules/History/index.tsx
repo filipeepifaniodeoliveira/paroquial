@@ -9,7 +9,7 @@ export const History = (): JSX.Element => {
     <S.SectionSobre>
       <S.Container>
         <S.ContainerTitle>
-          <h2>A Paróquia</h2>
+          <h2>Paróquia</h2>
         </S.ContainerTitle>
       </S.Container>
       <S.Pincipal>

@@ -15,13 +15,35 @@ export const Container = styled.div`
   background-position: center;
   background-size: cover;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-  filter: brightness(0.35) opacity(0.85);
+  filter: brightness(0.45) opacity(0.85);
 
   @media (max-width: 1000px) {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
+  }
+`;
+
+export const ContainerInfos = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: center;
+`;
+
+export const ContainerTitle = styled.div`
+  border-radius: 50px;
+  text-align: center;
+  :hover {
+    transform: scale(1.1);
+    transition: 500ms linear;
+  }
+  @media (max-width: 1000px) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: 1000px) {
+    margin-top: 60px;
   }
 `;
 
@@ -131,9 +153,9 @@ export const ContainerLogoMobile = styled.div`
 
 export const ContainerText = styled.div`
   width: 100%;
-  text-align: center;
   margin-top: 160px;
   z-index: 96;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,7 +178,7 @@ export const ContainerText = styled.div`
     font-size: ${props => props.theme.fontsSizes['6xl']};
     font-weight: 800px;
     color: ${props => props.theme.colors.primary.colorNeutralLightest};
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 13px black;
     @media (max-width: 1242px) {
       font-size: ${props => props.theme.fontsSizes['2xl']};
     }
@@ -175,7 +197,7 @@ export const ContainerText = styled.div`
     /* font-family: ${props => props.theme.fonts.type5}, sans-serif; */
     /* font-family: ${props => props.theme.fonts.type6}, cursive; */
     font-size: 18px;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 13px black;
     color: ${props => props.theme.colors.primary.colorNeutralLightest};
     @media (max-width: 1242px) {
       font-family: ${props => props.theme.fonts.type6}, cursive;
@@ -190,7 +212,7 @@ export const ContainerText = styled.div`
     font-family: ${props => props.theme.fonts.primary};
     font-size: ${props => props.theme.fontsSizes['2xl']};
     color: ${props => props.theme.colors.primary.colorNeutralLightest};
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 13px black;
     @media (max-width: 700px) {
       font-size: ${props => props.theme.fontsSizes.lg};
       margin-top: 30px;

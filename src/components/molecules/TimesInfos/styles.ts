@@ -55,13 +55,14 @@ export const ContainerTitle = styled.div`
 
   h2 {
     color: rgb(244, 244, 246);
-    font-family: ${props => props.theme.fonts.type5}, sans-serif;
-    font-size: ${props => props.theme.fontsSizes['4xl']};
+    font-family: ${props => props.theme.fonts.type6}, cursive;
+    font-size: ${props => props.theme.fontsSizes['6xl']};
     font-weight: bold;
     margin-bottom: 8px;
 
     @media (max-width: 600px) {
-      font-size: 24px;
+      font-size: ${props => props.theme.fontsSizes['4xl']};
+      margin-top: 30px;
     }
   }
 
@@ -103,6 +104,7 @@ export const ContainerInfoPhone = styled.div`
 
     @media (max-width: 600px) {
       font-size: 14px;
+      max-width: 300px;
     }
 
     @media (max-width: 1000px) {

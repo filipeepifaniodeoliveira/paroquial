@@ -10,9 +10,6 @@ export const SectionSobre = styled.div`
 `;
 
 export const Pincipal = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0px 20px 0px 20px;
   width: 100%;
   margin-bottom: 20px;
@@ -27,7 +24,6 @@ export const ContainerInfo = styled.div`
   width: 100%;
   min-height: 600px;
   background-color: ${props => props.theme.colors.primary.colorNeutralWhite};
-  /* background-color: red; */
 `;
 
 export const ContainerImg = styled.div`
@@ -50,7 +46,7 @@ export const CardImage = styled(NextImage).attrs({
   height: 400,
   loading: 'lazy',
   quality: 95,
-  width: 450,
+  width: 650,
 })`
   object-fit: cover;
 `;
@@ -87,6 +83,11 @@ export const Container = styled.div`
   width: 100%;
 `;
 
+export const DisplayFlex = styled.div`
+  width: 100%;
+  margin-top: 20px;
+`;
+
 export const ContainerTitle = styled.div`
   border-radius: 50px;
   margin-top: 60px;
@@ -95,18 +96,26 @@ export const ContainerTitle = styled.div`
   h2 {
     color: ${props => props.theme.colors.alternative.blue2};
     color: #77abc1;
-    font-family: ${props => props.theme.fonts.secundary};
-    font-size: ${props => props.theme.fontsSizes['3xl']};
+    font-family: ${props => props.theme.fonts.type6}, cursive;
+    font-size: ${props => props.theme.fontsSizes['6xl']};
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 40px;
+
+    @media (max-width: 1000px) {
+      margin-bottom: 10px;
+    }
   }
   h4 {
     color: ${props => props.theme.colors.alternative.blue2};
     color: #77abc1;
-    font-family: ${props => props.theme.fonts.secundary};
+    font-family: ${props => props.theme.fonts.primary};
     font-size: ${props => props.theme.fontsSizes.xl};
     font-weight: 700;
     max-height: 400px;
+
+    @media (max-width: 1000px) {
+      max-width: 248px;
+    }
   }
 `;
 
@@ -147,10 +156,12 @@ export const ContainerButton = styled.div`
 `;
 
 export const ContainerIcons = styled.div`
+  gap: 50px;
   display: flex;
   align-items: center;
-  justify-content: right;
-  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
   svg {
     cursor: pointer;
     color: #77abc1;
@@ -163,13 +174,17 @@ export const ContainerIcons = styled.div`
 `;
 
 export const CardIcon = styled.p`
-  /* grid-row: 2/3; */
-  font-size: 20px;
+  font-size: 48px;
   justify-self: end;
+  cursor: pointer;
+
+  @media (max-width: 1000px) {
+    font-size: 48px;
+  }
 `;
 
 export const ContainerAddress = styled.div`
-  text-align: right;
+  text-align: center;
   font-weight: 600;
   color: #77abc1;
   font-size: ${props => props.theme.fontsSizes.md};
@@ -184,6 +199,10 @@ export const ContainerAddress = styled.div`
     margin-top: 30px;
     p {
       margin-top: 20px;
+    }
+
+    h3 {
+      font-size: ${props => props.theme.fontsSizes.xl};
     }
   }
 
