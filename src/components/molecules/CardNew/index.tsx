@@ -1,10 +1,11 @@
 import React from 'react';
+import LinkNext from 'next/link';
 import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
 import * as S from './styles';
 
 export const CardNew = ({
-  url,
+  id,
   image,
   title,
   subtitle,
@@ -13,7 +14,9 @@ export const CardNew = ({
   const header = <img alt="Card" src={image} />;
   const footer = (
     <div className="flex flex-wrap justify-content-end gap-2">
-      <Button label="Saber mais" />
+      <LinkNext href={`posts/${id}`}>
+        <Button label="Saber mais" />
+      </LinkNext>
     </div>
   );
 

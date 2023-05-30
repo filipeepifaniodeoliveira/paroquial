@@ -1,10 +1,26 @@
-import React from 'react';
+import Head from 'next/head';
+import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/dist/client/router';
+import { useTranslation } from 'next-i18next';
 import * as S from './styles';
-import { CardNew } from '../CardNew';
+import { New } from '@components/molecules/NewPage';
 
-export const News = (): JSX.Element => {
-  const cards = {
-    sideMenu: [
+type INew = {
+  id: string;
+  image: string;
+  title: string;
+  subtitle: string;
+  description: string;
+};
+
+export const NewModel = (): JSX.Element => {
+  const { t } = useTranslation('common');
+  const [noticia, setNoticia] = useState<any>(null);
+  const router = useRouter();
+  const parametro = router.query.id;
+
+  const itens = {
+    news: [
       {
         id: '1',
         image:
@@ -35,29 +51,23 @@ export const News = (): JSX.Element => {
       },
     ],
   };
+
+  useEffect(() => {
+    if (parametro) {
+      itens?.news.forEach(element => {
+        if (element.id === parametro) {
+          setNoticia(element);
+        }
+      });
+    }
+  }, [parametro]);
+
   return (
-    <>
-      <S.Container>
-        <S.ContainerInfos>
-          <S.ContainerTitle>
-            <h2>Notícias</h2>
-            <h4>Fique por dentro das notícias paróquiais</h4>
-          </S.ContainerTitle>
-        </S.ContainerInfos>
-        <S.Cards>
-          {cards.sideMenu.map((item, index) => (
-            <div key={index}>
-              <CardNew
-                id={item.id}
-                image={item.image}
-                title={item.title}
-                subtitle={item.subtitle}
-                description={item.description}
-              />
-            </div>
-          ))}
-        </S.Cards>
-      </S.Container>
-    </>
+    <S.Container>
+      <Head>
+        <title>{t('h1')}</title>
+      </Head>
+      {noticia && <New noticia={noticia} />}
+    </S.Container>
   );
 };

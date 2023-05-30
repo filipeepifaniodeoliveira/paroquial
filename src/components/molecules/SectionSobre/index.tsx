@@ -1,4 +1,5 @@
 import React from 'react';
+import LinkNext from 'next/link';
 import Pregacao from '../../../../public/images/matrizOficial.png';
 import { Button } from 'primereact/button';
 
@@ -40,7 +41,9 @@ export const SectionSobre = (): JSX.Element => {
                 portanto, Mãe de Deus.
               </p>
               <S.ContainerButton>
-                <Button label="Saiba Mais" />
+                <LinkNext href="paroquia">
+                  <Button label="Saiba Mais" />
+                </LinkNext>
               </S.ContainerButton>
             </S.ContainerTimes>
           </S.Container>

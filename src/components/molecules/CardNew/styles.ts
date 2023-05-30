@@ -8,9 +8,14 @@ export const Container = styled.div`
 
   .card {
     max-width: 350px;
+
     @media (max-width: 1000px) {
       margin-top: 10px;
     }
+  }
+
+  .p-card {
+    min-height: 540px;
   }
 
   button {

@@ -34,13 +34,19 @@ export const Contatos = (): JSX.Element => {
             <S.ContainerAddress>
               <S.ContainerIcons>
                 <S.CardIcon>
-                  <Icon icon={faFacebook} color="white" />
+                  <a href="https://www.facebook.com/ParoquiaStaMaria">
+                    <Icon icon={faFacebook} color="white" />
+                  </a>
                 </S.CardIcon>
                 <S.CardIcon>
-                  <Icon icon={faInstagram} color="white" />
+                  <a href="https://www.instagram.com/paroquiastamaria/">
+                    <Icon icon={faInstagram} color="white" />
+                  </a>
                 </S.CardIcon>
                 <S.CardIcon>
-                  <Icon icon={faYoutube} color="white" />
+                  <a href="https://www.youtube.com/@ParoquiaStaMaria">
+                    <Icon icon={faYoutube} color="white" />
+                  </a>
                 </S.CardIcon>
               </S.ContainerIcons>
             </S.ContainerAddress>
