@@ -47,6 +47,13 @@ export const ContainerAddress = styled.div`
   @media (max-width: ${props => props.theme.media.resolution.mobile.md}) {
     font-size: ${props => props.theme.fontsSizes.lg};
   }
+
+  h5 {
+    margin-top: 90px;
+    font-family: ${props => props.theme.fonts.type6}, cursive;
+    font-size: ${props => props.theme.fontsSizes['2xl']};
+    font-weight: 800px;
+  }
   svg {
     cursor: pointer;
   }
