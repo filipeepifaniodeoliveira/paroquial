@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Logo from '../../../../public/images/logo-principal.png';
 
 import NextLink from 'next/link';

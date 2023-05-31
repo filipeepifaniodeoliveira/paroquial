@@ -79,29 +79,11 @@ export const ContainerIcons = styled.div`
 `;
 
 export const CardIcon = styled.p`
-  /* grid-row: 2/3; */
   font-size: 20px;
   justify-self: end;
 `;
 
 export const Container = styled.div``;
-
-export const TitleMobile = styled.div`
-  margin: 0;
-  padding: 0;
-  font-size: ${props => props.theme.fontsSizes.sm};
-  font-weight: ${props => props.theme.fontsWeight.medium};
-  color: ${props => props.theme.colors.secondary.type2};
-  padding: 20px 0px 5px 0px;
-  color: ${props => props.theme.colors.primary.colorNeutralWhite};
-  letter-spacing: 0.22em;
-  font-weight: normal;
-  text-transform: uppercase;
-
-  @media only screen and (max-width: 700px) {
-    font-size: 8px;
-  }
-`;
 
 export const CardImageMobile = styled(NextImage).attrs({
   loading: 'lazy',

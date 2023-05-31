@@ -223,21 +223,28 @@ export const ContainerMissas = styled.div`
     }
   }
 
-  .pastorais {
-    @media (max-width: 600px) {
-      display: none;
+  .p-tabview-ink-bar {
+    background-color: ${props =>
+      props.theme.colors.alternative.blue2} !important;
+  }
+
+  .p-tabview-panels {
+    background-color: #77abc1;
+  }
+
+  .p-tabview-nav-link {
+    transition: none !important;
+    box-shadow: none !important;
+  }
+
+  .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    :focus {
+      color: #77abc1 !important;
+      border-color: #77abc1 !important;
     }
   }
 
-  .batizados {
-    @media (max-width: 600px) {
-      display: none;
-    }
+  .p-tabview-selected {
+    color: #77abc1 !important;
   }
-`;
-
-export const Dias = styled.div`
-  align-items: center;
-  display: flex;
-  justify-content: center;
 `;

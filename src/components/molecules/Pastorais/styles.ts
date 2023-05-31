@@ -27,7 +27,6 @@ export const ContainerInfo = styled.div`
   width: 100%;
   min-height: 600px;
   background-color: ${props => props.theme.colors.primary.colorNeutralWhite};
-  /* background-color: red; */
 `;
 
 export const ContainerImg = styled.div`
@@ -128,20 +127,5 @@ export const ContainerTimes = styled.div`
     font-size: 16px;
     font-family: ${props => props.theme.fonts.primary};
     margin-top: 18px !important;
-  }
-`;
-
-export const ContainerButton = styled.div`
-  margin-top: 8px !important;
-  margin-bottom: 18px !important;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-
-  button {
-    width: 120px;
-    height: 40px;
-    background-color: #77abc1;
-    border: none;
   }
 `;

@@ -82,15 +82,6 @@ export const ContainerImg = styled.div`
   }
 `;
 
-export const CardImage = styled(NextImage).attrs({
-  height: 400,
-  loading: 'lazy',
-  quality: 95,
-  width: 600,
-})`
-  object-fit: cover;
-`;
-
 export const ContainerImgMob = styled.div`
   width: 100%;
   align-items: center;
@@ -111,24 +102,11 @@ export const ContainerImgMob = styled.div`
   }
 `;
 
-export const CardImageMobile = styled(NextImage).attrs({
-  height: 300,
-  loading: 'lazy',
-  quality: 95,
-  width: 350,
-})`
-  object-fit: cover;
-`;
-
 export const ContainerTitle = styled.div`
   border-radius: 50px;
   margin-top: 60px;
   text-align: center;
   margin-bottom: 5px;
-
-  /* @media (max-width: 700px) {
-    margin-bottom: 0px;
-  } */
 
   h2 {
     color: #77abc1;
@@ -158,20 +136,5 @@ export const ContainerTitle = styled.div`
       font-size: ${props => props.theme.fontsSizes['4xl']};
       max-width: 250px;
     } */
-  }
-`;
-
-export const ContainerButton = styled.div`
-  margin-top: 8px !important;
-  margin-bottom: 18px !important;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-
-  button {
-    width: 120px;
-    height: 40px;
-    background-color: #77abc1;
-    border: none;
   }
 `;

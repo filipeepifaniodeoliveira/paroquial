@@ -88,7 +88,6 @@ export const TimesInfos = (): JSX.Element => {
                     <h3 className="">Grupo Jovem</h3>
                     <p className="">Sabados: 19:00 hs</p>
                   </S.ContainerMissas>
-                  {/* </S.Container> */}
                 </TabPanel>
               </TabView>
             </S.ContainerTimesDesktop>

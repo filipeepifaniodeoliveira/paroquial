@@ -134,9 +134,6 @@ export const ContainerText = styled.div`
   }
 
   h2 {
-    /* font-family: ${props => props.theme.fonts.type3}, cursive; */
-    /* font-family: ${props => props.theme.fonts.type4}, cursive; */
-    /* font-family: ${props => props.theme.fonts.type5}, sans-serif; */
     font-family: ${props => props.theme.fonts.type6}, cursive;
     font-size: ${props => props.theme.fontsSizes['6xl']};
     font-weight: bold;
@@ -154,10 +151,6 @@ export const ContainerText = styled.div`
 
   h5 {
     max-height: 400px;
-    /* font-family: ${props => props.theme.fonts.secundary}; */
-    /* font-family: ${props => props.theme.fonts.type3}, cursive; */
-    /* font-family: ${props => props.theme.fonts.type4}, cursive; */
-    /* font-family: ${props => props.theme.fonts.type5}, sans-serif; */
     font-family: ${props => props.theme.fonts.type6}, cursive;
     font-size: 28px;
     color: ${props => props.theme.colors.primary.colorNeutralLightest};

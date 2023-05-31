@@ -1,14 +1,5 @@
 import React from 'react';
-import Pitu from '../../../../public/images/sjose.png';
 import * as S from './styles';
-
-type INew = {
-  id: string;
-  image: string;
-  title: string;
-  subtitle: string;
-  description: string;
-};
 
 export const New = (noticia: any): JSX.Element => {
   console.log(noticia.noticia, 'noticia');

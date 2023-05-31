@@ -52,7 +52,6 @@ export const Item = styled.div`
 
 export const ItemLink = styled.h2`
   font-family: ${props => props.theme.fonts.primary};
-  /* font-family: ${props => props.theme.fonts.type5}, sans-serif; */
   font-size: ${props => props.theme.fontsSizes.xl};
   font-weight: ${props => props.theme.fontsWeight.semibold};
   color: ${props => props.theme.colors.natural.type1};
@@ -65,9 +64,6 @@ export const ItemLink = styled.h2`
 `;
 
 export const Containerflex = styled.div`
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   width: 100%;
 `;
 

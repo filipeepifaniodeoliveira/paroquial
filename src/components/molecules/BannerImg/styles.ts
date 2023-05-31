@@ -47,94 +47,12 @@ export const ContainerTitle = styled.div`
   }
 `;
 
-export const CardImage1 = styled(NextImage).attrs({
-  loading: 'lazy',
-  height: 670,
-  width: 400,
-})`
-  object-fit: cover;
-`;
-
-export const CardImage2 = styled(NextImage).attrs({
-  loading: 'lazy',
-})`
-  object-fit: cover;
-`;
-
 export const CardImage3 = styled(NextImage).attrs({
   loading: 'lazy',
   height: 90,
   width: 90,
 })`
   object-fit: cover;
-`;
-
-export const ContainerPadroeira = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  img {
-    -webkit-animation: right 4s forwards;
-    animation: right 4s forwards;
-
-    @-webkit-keyframes right {
-      from {
-        right: 0px;
-      }
-      to {
-        left: 25px;
-      }
-    }
-
-    @keyframes right {
-      from {
-        right: 0px;
-      }
-      to {
-        left: 25px;
-      }
-    }
-  }
-
-  @media (max-width: 1000px) {
-    display: none;
-  }
-`;
-
-export const ContainerLogo = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 70px;
-
-  img {
-    max-height: 400px;
-    -webkit-animation: left 4s forwards;
-    animation: left 4s forwards;
-
-    @-webkit-keyframes left {
-      from {
-        right: 0px;
-      }
-      to {
-        margin-right: 25px;
-      }
-    }
-
-    @keyframes left {
-      from {
-        margin-right: 0px;
-      }
-      to {
-        margin-right: 25px;
-      }
-    }
-  }
-
-  @media (max-width: 1000px) {
-    display: none;
-  }
 `;
 
 export const ContainerLogoMobile = styled.div`
@@ -146,9 +64,6 @@ export const ContainerLogoMobile = styled.div`
     transform: scale(1.2);
     transition: 800ms linear;
   }
-  /* @media (min-width: 1000px) {
-    display: none;
-  } */
 `;
 
 export const ContainerText = styled.div`
@@ -162,7 +77,6 @@ export const ContainerText = styled.div`
   position: absolute;
 
   :hover {
-    /* transform: scale(1.1); */
     transition: 800ms linear;
   }
 
@@ -171,9 +85,6 @@ export const ContainerText = styled.div`
   }
 
   h2 {
-    /* font-family: ${props => props.theme.fonts.type3}, cursive; */
-    /* font-family: ${props => props.theme.fonts.type4}, cursive; */
-    /* font-family: ${props => props.theme.fonts.type5}, sans-serif; */
     font-family: ${props => props.theme.fonts.type6}, cursive;
     font-size: ${props => props.theme.fontsSizes['6xl']};
     font-weight: 800px;
@@ -192,10 +103,6 @@ export const ContainerText = styled.div`
   h5 {
     max-height: 400px;
     font-family: ${props => props.theme.fonts.secundary};
-    /* font-family: ${props => props.theme.fonts.type3}, cursive; */
-    /* font-family: ${props => props.theme.fonts.type4}, cursive; */
-    /* font-family: ${props => props.theme.fonts.type5}, sans-serif; */
-    /* font-family: ${props => props.theme.fonts.type6}, cursive; */
     font-size: 18px;
     text-shadow: 1px 1px 13px black;
     color: ${props => props.theme.colors.primary.colorNeutralLightest};

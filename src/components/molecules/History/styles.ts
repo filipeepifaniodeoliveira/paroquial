@@ -130,18 +130,3 @@ export const ContainerTimes = styled.div`
     margin-top: 18px !important;
   }
 `;
-
-export const ContainerButton = styled.div`
-  margin-top: 8px !important;
-  margin-bottom: 18px !important;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-
-  button {
-    width: 120px;
-    height: 40px;
-    background-color: #77abc1;
-    border: none;
-  }
-`;
